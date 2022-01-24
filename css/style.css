@@ -34,6 +34,10 @@ body {
 	text-align: var(--justify);
 }
 
+.card-heading-color {
+	color: #231d4f;
+}
+
 /* carousel customs css  */
 .carousel-item:after {
 	content: '';
@@ -51,6 +55,11 @@ body {
 	z-index: 2;
 }
 
+/* gallery customs styles */
+.border-bottom {
+	width: 43% !important ;
+}
+
 /* Carousel customs Media Queries  */
 
 @media only screen and (max-width: 688px) {
@@ -63,5 +72,25 @@ body {
 	}
 	.carousel-caption a {
 		margin-bottom: 1rem !important;
+	}
+
+	.gallery-title {
+		font-size: 1.688rem;
+	}
+	.border-bottom {
+		width: 98% !important;
+	}
+}
+
+/*------------------------------------------------*/
+@media screen and (min-width: 688px) and (max-width: 992px) {
+	.border-bottom {
+		width: 68% !important;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1312px) {
+	.border-bottom {
+		width: 56% !important;
 	}
 }
