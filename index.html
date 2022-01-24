@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
     <!-- Header section -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white shadow py-2">
@@ -33,18 +32,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-uppercase">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">About Us</a>
+                            <a class="nav-link" aria-current="page" href="#gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Contact</a>
+                            <a class="nav-link" aria-current="page" href="#packages">Packages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Subcribe</a>
+                            <a class="nav-link" aria-current="page" href="#faq">FAQ</a>
                         </li>
                     </ul>
                 </div>
@@ -52,7 +51,7 @@
         </nav>
 
         <!-- Slider Section -->
-        <section class="slider">
+        <section class="slider" id="home">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -73,7 +72,7 @@
                                     Welcome and open yourself to your truest love this year with
                                     us! With the Release Process.
                                 </p>
-                                <a class="btn primary-bg-color border-0 text-uppercase text-white ext-decoration-none fw-bold px-5 py-2"
+                                <a class="btn primary-bg-color border-0 text-uppercase text-white ext-decoration-none fw-bold px-5 py-2 rounded-pill"
                                     href="https://www.colincowie.com/" target="_blank">book now</a>
                             </div>
                         </div>
@@ -84,11 +83,11 @@
                         <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
                             <div>
                                 <h1 class="display-1">Our Dreamy Love</h1>
-                                <p>
+                                <p class="fs-4">
                                     Welcome and open yourself to your truest love this year with
                                     us! With the Release Process.
                                 </p>
-                                <a class="btn primary-bg-color border-0 text-uppercase text-white fw-bold px-5 py-2 mb-2"
+                                <a class="btn primary-bg-color border-0 text-uppercase text-white fw-bold px-5 py-2 mb-2 rounded-pill"
                                     href="https://www.colincowie.com/" target="_blank">book now</a>
                             </div>
                         </div>
@@ -99,11 +98,11 @@
                         <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
                             <div>
                                 <h1 class="display-1">Our Dreamy Love</h1>
-                                <p>
+                                <p class="fs-4">
                                     Welcome and open yourself to your truest love this year with
                                     us! With the Release Process
                                 </p>
-                                <a class="btn primary-bg-color border-0 text-uppercase text-white fw-bold px-5 py-2 mb-2"
+                                <a class="btn primary-bg-color border-0 text-uppercase text-white fw-bold px-5 py-2 mb-2 rounded-pill"
                                     href="https://www.colincowie.com/" target="_blank">book now</a>
                             </div>
                         </div>
@@ -124,33 +123,30 @@
     </header>
     <main>
         <!-- Gallery section -->
-        <section class="planner-gallery my-5">
+        <section class="planner-gallery py-4" id="gallery">
             <div class="container">
-                <div class="position-relative my-5">
+                <div class="py-5">
                     <h1 class="gallery-title text-center fw-bold text-uppercase card-heading-color">
                         celebrating your love
                     </h1>
-                    <div
-                        class="gallery-border border-bottom border-3 border-secondary position-absolute top-100 start-50 translate-middle">
-                    </div>
                 </div>
                 <div class="row g-2">
                     <div class="col-12 col-md-4">
                         <div class="d-flex flex-column">
-                            <img class="w-100 mb-2" src="./assets/images/planner1.jpeg" alt="" />
-                            <img class="w-100" src="./assets/images/planner2.jpeg" alt="" />
+                            <img class="w-100 mb-2" src="./assets/images/planner1.jpeg" alt="couple image" />
+                            <img class="w-100" src="./assets/images/planner2.jpeg" alt="couple image" />
                         </div>
                     </div>
                     <div class="col-12 col-md-8">
                         <div class="row g-2">
                             <div class="col-12 col-md-6">
                                 <div class="d-flex flex-column flex-md-row">
-                                    <img class="w-100 me-2" src="./assets/images/planner3.jpeg" alt="" />
-                                    <img class="w-100" src="./assets/images/planner4.jpeg" alt="" />
+                                    <img class="w-100 me-2" src="./assets/images/planner3.jpeg" alt="couple image" />
+                                    <img class="w-100" src="./assets/images/planner4.jpeg" alt="couple image" />
                                 </div>
                             </div>
                             <div class="col-12 col-md-12">
-                                <img class="w-100" src="./assets/images/planner5.jpeg" alt="" />
+                                <img class="w-100" src="./assets/images/planner5.jpeg" alt="couple image" />
                             </div>
                         </div>
                     </div>
@@ -159,10 +155,12 @@
         </section>
 
         <!-- Package section -->
-        <section class="package my-5">
+        <section class="package py-2" id="packages">
             <div class="container">
-                <div class="my-5">
-                    <h1 class="section-title text-uppercase text-center card-heading-color fw-bold">Our packages</h1>
+                <div class="py-5">
+                    <h1 class="section-title text-uppercase text-center card-heading-color fw-bold">
+                        Our packages
+                    </h1>
                 </div>
                 <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 g-4">
                     <div class="col">
@@ -173,17 +171,25 @@
                                     <h3 class="card-text card-heading-color">Business fair</h3>
                                 </div>
                                 <div class="price-summary text-muted pt-2">
-                                    <p>For most businesses event like book fair, craft fair.
-                                    </p>
+                                    <p>For most businesses event like book fair, craft fair.</p>
                                     <div class="summary-bullet-point list-unstyled">
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>limited space access
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>limited space access
                                         </li>
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>Security facility
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>Security facility
                                         </li>
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>Event support</li>
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>Decoration design
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>Event
+                                            support
                                         </li>
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>Per day bill</li>
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>Decoration design
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>Per
+                                            day bill
+                                        </li>
                                     </div>
                                 </div>
                             </div>
@@ -201,18 +207,25 @@
                                     <h3 class="card-text card-heading-color">Wedding basic</h3>
                                 </div>
                                 <div class="price-summary text-muted pt-2">
-                                    <p>For weddings with basic plan and limited item.
-                                    </p>
+                                    <p>For weddings with basic plan and limited item.</p>
                                     <div class="summary-bullet-point list-unstyled">
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>Full space access
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>Full
+                                            space access
                                         </li>
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>Food arrangement
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>Food
+                                            arrangement
                                         </li>
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>Management support
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>Management support
                                         </li>
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>Decoration design
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>Decoration design
                                         </li>
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>Billed as shift</li>
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>Billed as shift
+                                        </li>
                                     </div>
                                 </div>
                             </div>
@@ -223,10 +236,11 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card border-0 h-100 shadow-lg card-bg-color rounded-3 p-1 position-relative">
+                        <div
+                            class="card special-card border-0 h-100 shadow-lg card-bg-color rounded-3 p-1 position-relative">
                             <span
-                                class="tost-position position-absolute top-0 translate-middle badge rounded-pill bg-danger">
-                                99+
+                                class="tost-position position-absolute top-0 translate-middle badge rounded-pill bg-danger text-uppercase p-2">
+                                hot
                                 <span class="visually-hidden">unread messages</span>
                             </span>
                             <div class="card-body">
@@ -235,17 +249,25 @@
                                     <h3 class="card-text text-white">Wedding plus</h3>
                                 </div>
                                 <div class="price-summary text-white pt-2">
-                                    <p>For most weddings with premium plans.
-                                    </p>
+                                    <p>For most weddings with premium plans.</p>
                                     <div class="summary-bullet-point list-unstyled">
-                                        <li><i class="fas fa-check-circle text-white pe-1"></i>Full space access
+                                        <li>
+                                            <i class="fas fa-check-circle text-white pe-1"></i>Full
+                                            space access
                                         </li>
-                                        <li><i class="fas fa-check-circle text-white pe-1"></i>Dedicated team
+                                        <li>
+                                            <i class="fas fa-check-circle text-white pe-1"></i>Dedicated team
                                         </li>
-                                        <li><i class="fas fa-check-circle text-white pe-1"></i>Buffet food</li>
-                                        <li><i class="fas fa-check-circle text-white pe-1"></i>Premium Decoration
+                                        <li>
+                                            <i class="fas fa-check-circle text-white pe-1"></i>Buffet food
                                         </li>
-                                        <li><i class="fas fa-check-circle text-white pe-1"></i>pay as plan</li>
+                                        <li>
+                                            <i class="fas fa-check-circle text-white pe-1"></i>Premium Decoration
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle text-white pe-1"></i>pay
+                                            as plan
+                                        </li>
                                     </div>
                                 </div>
                             </div>
@@ -259,21 +281,33 @@
                         <div class="card border-0 h-100">
                             <div class="card-body">
                                 <div class="price-title">
-                                    <h1 class="card-title fw-light card-heading-color">$1200</h1>
-                                    <h3 class="card-text card-heading-color">Corporate event</h3>
+                                    <h1 class="card-title fw-light card-heading-color">
+                                        $1200
+                                    </h1>
+                                    <h3 class="card-text card-heading-color">
+                                        Corporate event
+                                    </h3>
                                 </div>
                                 <div class="price-summary text-muted pt-2">
-                                    <p>For most corporate business events.
-                                    </p>
+                                    <p>For most corporate business events.</p>
                                     <div class="summary-bullet-point list-unstyled">
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>Full space access
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>Full
+                                            space access
                                         </li>
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>Dedicated team
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>Dedicated team
                                         </li>
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>Buffet food</li>
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>premium Decoration
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>Buffet food
                                         </li>
-                                        <li><i class="fas fa-check-circle icon-color pe-1"></i>Pay as plan</li>
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>premium Decoration
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle icon-color pe-1"></i>Pay
+                                            as plan
+                                        </li>
                                     </div>
                                 </div>
                             </div>
@@ -283,33 +317,53 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
+        <!-- Tost section  -->
+        <div class="section tost position-relative mt-5">
+            <div class="toast show align-items-center position-absolute top-50 end-0 translate-middle-y" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="fs-6"><i class="fas fa-gift text-primary fs-4 pe-2"></i>20% off on
+                                next booking</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+
         <!-- Client Section -->
-        <section class="happy-client my-5">
+        <section class="happy-client py-2">
             <div class="container">
-                <div class="my-5">
-                    <h1 class="section-title text-uppercase text-center card-heading-color fw-bold">happy clients</h1>
+                <div class="py-5">
+                    <h1 class="section-title text-uppercase text-center card-heading-color fw-bold">
+                        happy clients
+                    </h1>
                 </div>
                 <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-3">
                     <div class="col">
                         <div class="card border-0 h-100 shadow-lg">
                             <div class="card-body text-center">
                                 <div class="client-comment pt-2 pb-2">
-                                    <p class="card-text">Feelings brings a brand new design for Wedding, Wedding planner
-                                        and wedding shop with style.</p>
+                                    <p class="card-text">
+                                        Feelings brings a brand new design for Wedding, Wedding
+                                        planner and wedding shop with style.
+                                    </p>
                                 </div>
                                 <div class="client-image">
-                                    <img src="./assets/images/person 2.png" class="img-fluid" alt="...">
+                                    <img src="./assets/images/person 2.png" class="img-fluid"
+                                        alt="engineer man image" />
                                 </div>
                                 <div class="client-details pt-2">
                                     <h4 class="fw-bold">Regina Miles</h4>
                                     <p>Engineer</p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -317,17 +371,19 @@
                         <div class="card border-0 h-100 shadow-lg">
                             <div class="card-body text-center">
                                 <div class="client-comment pt-2 pb-2">
-                                    <p class="card-text">Slate helps you see how many more days you need to work to
-                                        reach your financial goal for the month and year.</p>
+                                    <p class="card-text">
+                                        Slate helps you see how many more days you need to work to
+                                        reach your financial goal for the month and year.
+                                    </p>
                                 </div>
                                 <div class="client-image">
-                                    <img src="./assets/images/person 3.png" class="img-fluid" alt="...">
+                                    <img src="./assets/images/person 3.png" class="img-fluid"
+                                        alt="blogger man image." />
                                 </div>
                                 <div class="client-details pt-2">
                                     <h4 class="fw-bold">Jone Drake</h4>
                                     <p>Blogger</p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -335,11 +391,14 @@
                         <div class="card border-0 h-100 shadow-lg">
                             <div class="card-body text-center">
                                 <div class="client-comment pt-2 pb-2">
-                                    <p class="card-text">Feelings guarantee the best possible fastest support so that
-                                        you don’t ever get stopped in the middle of your events</p>
+                                    <p class="card-text">
+                                        Feelings guarantee the best possible fastest support so
+                                        that you don’t ever get stopped in the middle of your
+                                        events
+                                    </p>
                                 </div>
                                 <div class="client-image">
-                                    <img src="./assets/images/person 1.png" class="img-fluid" alt="...">
+                                    <img src="./assets/images/person 1.png" class="img-fluid" alt="banker man image" />
                                 </div>
                                 <div class="client-details pt-2">
                                     <h4 class="fw-bold">Cret Yater</h4>
@@ -351,6 +410,141 @@
                 </div>
             </div>
         </section>
+
+        <!-- Frequently Asked Questions -->
+        <section class="faq py-5" id="faq">
+            <div class="container">
+                <div class="py-2">
+                    <h1 class="section-title text-uppercase text-center card-heading-color fw-bold">
+                        Frequently Asked Questions
+                    </h1>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 justify-content-between align-items-center">
+                    <div class="col order-md-first order-lg-first">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What’s the difference between event design and event
+                                        planning?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-justify">
+                                        Event design and event planning work hand in hand to
+                                        deliver a successful event.Events by Knight offer tailor
+                                        made events. This means we incorporate both event design
+                                        and event planning to create that perfect event.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What’s included in event design?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <li>
+                                            Tables, chairs, linens rentals – including the selection
+                                            of styles, procurement, shipping and handling
+                                        </li>
+                                        <li>
+                                            Signs and sponsorship recognition within the room(s)
+                                        </li>
+                                        <li>Food presentation enhancements and staging style</li>
+                                        <li>
+                                            Guest table décor and napkin style, florals, menu, and
+                                            more
+                                        </li>
+                                        <li>
+                                            Room lighting — including procurement, objectives and
+                                            implementation, power specs
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        What services do you offer?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        We offer a comprehensive event planning service. We’re
+                                        able to find venues, organise catering, décor,
+                                        accommodation, staffing, equipment and even hire speakers
+                                        for corporate events. We offer a tailor made service to
+                                        fit your requirements. Every event is unique and we have
+                                        the capacity to fulfill your requirements from start to
+                                        finish.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        What are your fees?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        We will discuss all your event requirements before giving
+                                        a quotation as obviously fees charged will depend on the
+                                        scale and nature of the event, complexity of planning and
+                                        our level of involvement. We’ll keep in contact with you
+                                        regarding our time, hours spent, and liaise with you on
+                                        specific items, but we’ll also work to your budget and
+                                        plan accordingly. You’ll never be charged more than we
+                                        agree upon and there will be no hidden extras or
+                                        surprises.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col order-first">
+                        <img class="w-100" src="./assets/images/faq.svg" alt="man with a girl in the image" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer section -->
+        <footer class="footer-bg-color py-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-between align-items-center g-2">
+                    <div class="col">
+                        <p class="copyright text-white text-center">
+                            Copyright &copy; 2022 feelings
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center justify-content-between">
+                            <h5 class="text-white mb-4">Get the App</h5>
+                            <a class="w-50 mb-3" href="https://www.apple.com/ie/app-store/" target="_blank">
+                                <img class="img-fluid" src="./assets/images/apple-store-logo.png"
+                                    alt="apple-store-image" /></a>
+                            <a class="w-50" href="https://play.google.com/store" target="_blank">
+                                <img class="img-fluid" src="./assets/images/play-store-logo.png"
+                                    alt="play-store-image" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
     <!-- Bootstrap JS link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
