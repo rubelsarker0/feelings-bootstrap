@@ -60,6 +60,11 @@ body {
 	width: 43% !important ;
 }
 
+/* Card customs styles */
+.tost-position {
+	left: 85%;
+}
+
 /* Carousel customs Media Queries  */
 
 @media only screen and (max-width: 688px) {
