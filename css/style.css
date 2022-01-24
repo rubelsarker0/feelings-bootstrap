@@ -12,3 +12,56 @@
 body {
 	font-family: 'Spectral', serif;
 }
+
+/* Generic styles */
+.primary-bg-color {
+	background-color: #f496d1;
+}
+
+.icon-color {
+	color: var(--icon-color);
+}
+.secondary-bg-color {
+	background-color: #f496d1;
+	opacity: 0.2;
+}
+
+.card-bg-color {
+	background-color: var(--card-bg-color);
+}
+
+.text-justify {
+	text-align: var(--justify);
+}
+
+/* carousel customs css  */
+.carousel-item:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0.3;
+	z-index: 1;
+}
+
+.carousel-caption {
+	z-index: 2;
+}
+
+/* Carousel customs Media Queries  */
+
+@media only screen and (max-width: 688px) {
+	.carousel-caption h1 {
+		font-size: 1.5rem !important;
+		margin-top: 1.25rem;
+	}
+	.carousel-caption p {
+		font-size: 0.813rem !important;
+	}
+	.carousel-caption a {
+		margin-bottom: 1rem !important;
+	}
+}
