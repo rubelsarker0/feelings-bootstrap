@@ -1,0 +1,13 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;700&display=swap');
+
+/* CSS custom properties  */
+:root {
+	--primary-bg-color: #f496d1;
+	--icon-color: #5243c2a1;
+	--justify: justify;
+}
+
+body {
+	font-family: 'Spectral', serif;
+}
